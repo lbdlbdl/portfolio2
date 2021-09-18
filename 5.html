@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>페이지 제목</title>
+
+<Style>
+
+.moving {
+  width:2500px;height:1000px;
+  background:url("people.jpg") 0 center / 2500px repeat-x;
+  animation: movebg 80s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes movebg {
+0% {background-position:0 center;}
+100% {background-position:-2500px center;}
+}
+
+h1 {
+  font-size:100px;
+  text-align:center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 30px;
+  margin-left: 800px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: ':)';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2px;
+  transition: 0.5s;
+  margin-bottom: 10px
+}
+
+.button:hover span {
+  padding-right: 50px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+<h1>MY Portfolio</h1><br>
+<div class="moving"; text-align: center;>
+
+  <a href="1.html" ><button class="button">
+    <span>1.</span></a>
+
+  </button><br>
+
+  <button class="button">
+    <span>2.</span>
+
+  </button><br>
+
+  <button class="button">
+    <span>3.</span>
+
+  </button><br>
+
+  <button class="button">
+    <span>4.</span>
+
+  </button><br>
+
+
+
+ </div>
+
+
+</body>
+</html>
